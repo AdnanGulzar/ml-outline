@@ -1,0 +1,114 @@
+Statistics & Probability for ML/Data Science — Outline
+1. Statistical Foundations
+Types of data
+Numerical
+Categorical
+Discrete
+Continuous
+Binary
+Ordinal
+Population vs Sample
+Parameters vs Statistics
+Descriptive vs Inferential Statistics
+2. Descriptive Statistics
+Mean
+Median
+Mode
+Range
+Variance
+Standard Deviation
+Percentiles
+Quartiles
+IQR
+Z-score
+Outliers
+3. Data Distributions
+Frequency Distribution
+Probability Distribution
+Symmetric vs Skewed Distributions
+Skewness
+Kurtosis
+Normal Distribution
+Standard Normal Distribution
+Empirical Rule / 68-95-99.7 Rule
+4. Probability Fundamentals
+Sample Space
+Events
+Probability
+Complement
+Addition Rule
+Multiplication Rule
+Conditional Probability
+Independent vs Dependent Events
+5. Bayes & Random Variables
+Bayes' Theorem
+Prior
+Likelihood
+Evidence
+Posterior
+Random Variables
+Discrete
+Continuous
+Expected Value
+Variance
+6. Probability Distributions
+Bernoulli
+Binomial
+Uniform
+Normal / Gaussian
+Exponential
+Poisson
+7. Sampling
+Sampling Methods
+Sampling Bias
+Sampling Distribution
+Sample Mean
+Standard Error
+Central Limit Theorem
+8. Statistical Estimation
+Point Estimation
+Confidence Intervals
+Margin of Error
+Confidence Level
+Z-distribution
+T-distribution
+9. Hypothesis Testing
+Null Hypothesis
+Alternative Hypothesis
+Test Statistic
+P-value
+Significance Level
+Type I Error
+Type II Error
+Statistical Power
+10. Statistical Tests
+Z-test
+One-sample t-test
+Two-sample t-test
+Paired t-test
+Chi-square Test
+ANOVA
+11. Relationships Between Variables
+Covariance
+Correlation
+Pearson Correlation
+Spearman Correlation
+Correlation vs Causation
+12. Regression Statistics
+Simple Linear Regression
+Multiple Linear Regression
+Least Squares
+Residuals
+R²
+Adjusted R²
+Maximum Likelihood
+Log Likelihood
+13. Statistics for Machine Learning
+Bias vs Variance
+Overfitting vs Underfitting
+Cross-validation
+Data Leakage
+Class Imbalance
+Feature Scaling
+Standardization
+Model Evaluation Metrics
