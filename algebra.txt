@@ -1,0 +1,92 @@
+Algebra for ML — Outline
+1. Basic Algebra
+Variables
+Constants
+Coefficients
+Expressions
+Equations
+Inequalities
+Order of operations
+Fractions
+Ratios
+Proportions
+Percentages
+2. Exponents & Roots
+Exponents
+Negative exponents
+Fractional exponents
+Square roots
+Cube roots
+Exponent rules
+Scientific notation
+3. Algebraic Manipulation
+Simplifying expressions
+Expanding expressions
+Factoring
+Substitution
+Solving for variables
+Rearranging equations
+Linear equations
+Quadratic equations
+4. Functions
+Function notation
+Domain & range
+Linear functions
+Quadratic functions
+Polynomial functions
+Exponential functions
+Logarithmic functions
+Inverse functions
+Composition of functions
+5. Graphs & Coordinate Systems
+Cartesian coordinates
+Points
+Lines
+Slope
+Intercept
+Linear equations
+Graphing functions
+Distance between points
+6. Linear Equations
+One-variable equations
+Multiple-variable equations
+Systems of equations
+Substitution
+Elimination
+Matrix representation
+7. Sequences & Series
+Arithmetic sequences
+Geometric sequences
+Summation notation
+Basic series
+8. Logarithms & Exponentials ⭐
+Logarithm fundamentals
+Log rules
+Natural logarithm ln
+Exponential functions
+e
+Log transformations
+
+Important for:
+
+Logistic Regression
+Loss functions
+Probability
+Likelihood
+9. Absolute Value & Distance
+Absolute value
+Distance on a number line
+Distance between points
+Basic norms
+10. Algebra for ML Models ⭐⭐⭐
+Linear model
+y=wx+b
+Multiple linear model
+
+Prediction
+Weights
+Bias
+Features
+Targets
+Linear combinations
+Error/residual
