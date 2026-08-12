@@ -1,0 +1,72 @@
+Optimization for ML — Outline
+1. Optimization Fundamentals
+Objective function
+Decision variables / parameters
+Constraints
+Minimize vs maximize
+Local minimum
+Global minimum
+Saddle points
+Feasible region
+2. Loss & Cost Functions
+Loss function
+Cost function
+Objective function
+MSE
+MAE
+Cross-entropy / Log loss
+Regularized loss
+3. Calculus for Optimization
+Derivatives
+Partial derivatives
+Gradient
+Directional derivative
+Second derivative
+Hessian
+4. Gradient Descent ⭐⭐⭐
+Gradient descent intuition
+Update rule
+Learning rate
+Initialization
+Convergence
+Stopping criteria
+5. Gradient Descent Variants
+Batch Gradient Descent
+Stochastic Gradient Descent (SGD)
+Mini-batch Gradient Descent
+6. Advanced Optimizers
+Momentum
+Nesterov Momentum
+AdaGrad
+RMSProp
+Adam
+AdamW
+7. Convex Optimization
+Convex functions
+Convex sets
+Convex vs non-convex optimization
+Local vs global minima
+Optimization landscape
+8. Regularization
+L1 Regularization
+L2 Regularization
+Elastic Net
+Weight decay
+Overfitting vs underfitting
+9. Second-Order Optimization
+Hessian
+Newton's Method
+Quasi-Newton Methods
+BFGS
+L-BFGS
+10. Constrained Optimization
+Equality constraints
+Inequality constraints
+Lagrange multipliers
+KKT conditions
+11. Optimization in ML
+Linear Regression
+Logistic Regression
+Neural Networks
+Backpropagation
+Hyperparameter optimization
