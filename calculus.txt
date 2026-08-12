@@ -1,0 +1,85 @@
+Calculus for ML — Outline
+1. Calculus Foundations
+Functions
+Graphs
+Limits
+Continuity
+Rates of change
+Slope
+2. Derivatives ⭐⭐⭐
+Derivative intuition
+Difference quotient
+Derivative as slope
+Basic differentiation rules
+Power rule
+Constant rule
+Sum/difference rule
+Product rule
+Quotient rule
+Chain rule
+3. Common Derivatives
+Polynomial
+Exponential
+Logarithmic
+Sine
+Cosine
+Sigmoid
+4. Applications of Derivatives
+Increasing/decreasing functions
+Local maxima/minima
+Critical points
+Optimization
+Concavity
+Second derivative
+5. Partial Derivatives ⭐⭐⭐
+
+For functions with multiple variables:
+
+f(x,y)
+
+Learn:
+
+Partial derivative
+First-order partial derivatives
+Second-order partial derivatives
+Mixed partial derivatives
+6. Gradients ⭐⭐⭐
+
+
+
+Gradient vector
+Direction of steepest increase
+Gradient magnitude
+Gradient interpretation
+7. Chain Rule ⭐⭐⭐
+
+Essential for neural networks.
+
+Single-variable chain rule
+Multivariable chain rule
+Computational graphs
+Backpropagation connection
+8. Second-Order Calculus
+Second derivative
+Hessian matrix
+Curvature
+Local minima/maxima
+Convexity
+9. Integrals ⭐⭐
+Antiderivatives
+Definite integrals
+Indefinite integrals
+Area under curves
+Fundamental theorem of calculus
+
+For ML, you don't need to go as deeply into integration as derivatives.
+
+10. Optimization ⭐⭐⭐
+Objective functions
+Loss functions
+Local minima
+Global minima
+Gradient descent
+Learning rate
+Stochastic gradient descent
+Convex optimization
