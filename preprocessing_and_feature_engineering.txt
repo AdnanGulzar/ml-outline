@@ -1,0 +1,934 @@
+
+
+1. Python Data Science Fundamentals
+NumPy
+NumPy fundamentals
+Arrays
+Dimensions
+Shape
+Indexing
+Slicing
+Vectorized operations
+Statistical functions
+Mean
+Median
+Standard deviation
+Variance
+Percentiles
+Pandas
+DataFrame
+Series
+loc
+iloc
+groupby
+Filtering
+Sorting
+Missing values
+isna()
+dropna()
+fillna()
+Duplicates
+drop_duplicates()
+Data types
+astype()
+String → Date
+to_datetime()
+Data cleaning
+Feature creation
+Updating dependent columns
+Pandas Profiling
+2. Data Visualization
+Matplotlib
+Basic plots
+Line plot
+Bar plot
+Histogram
+Scatter plot
+Box plot
+Subplots
+Figure/axes
+Seaborn
+Statistical visualization
+scatterplot
+histplot
+boxplot
+Heatmap
+Distribution visualization
+Matplotlib vs Seaborn
+Matplotlib → lower-level, more control
+Seaborn → higher-level statistical visualization
+3. Exploratory Data Analysis — EDA
+EDA types
+Univariate EDA
+Bivariate EDA
+Multivariate EDA
+Univariate
+
+One variable:
+
+Histogram
+Box plot
+Bar plot
+KDE
+Bivariate
+
+Two variables:
+
+Scatter plot
+Box plot
+Violin plot
+Bar plot
+Line plot
+Multivariate
+
+Multiple variables:
+
+Heatmap
+Pair plot
+Correlation matrix
+3D plots
+
+Important concepts:
+
+Distribution
+Correlation
+Skewness
+Outliers
+Missing values
+Patterns
+Relationships
+4. Data Cleaning
+
+Important terms:
+
+Missing values
+Null values
+dropna()
+fillna()
+Mean imputation
+Median imputation
+Mode imputation
+Duplicate rows
+drop_duplicates()
+Incorrect data types
+Type conversion
+String to datetime
+Invalid values
+Outlier detection
+Outlier removal
+Data consistency
+Data validation
+5. Feature Engineering
+
+Important concepts:
+
+Feature creation
+Feature transformation
+Feature scaling
+Feature selection
+Feature extraction
+Binning
+Binarization
+Encoding
+Polynomial features
+Log transformation
+Power transformation
+6. Feature Scaling
+Standardization
+StandardScaler
+
+Formula:
+
+z=
+σ
+x−μ
+	​
+
+
+Result:
+
+mean ≈ 0
+std ≈ 1
+Normalization
+
+Usually Min-Max scaling:
+
+MinMaxScaler
+
+Formula:
+
+x
+′
+=
+x
+max
+	​
+
+−x
+min
+	​
+
+x−x
+min
+	​
+
+	​
+
+
+Usually:
+
+0 → 1
+Other scaler
+RobustScaler
+
+Useful when outliers are present.
+
+7. Feature Transformation
+
+Terms discussed:
+
+Function Transformer
+FunctionTransformer
+
+Used to apply custom mathematical functions.
+
+Power Transformer
+PowerTransformer
+
+Used to make distributions more Gaussian-like / reduce skewness.
+
+Common methods:
+
+Yeo-Johnson
+Box-Cox
+Polynomial Transformation
+x
+↓
+x²
+x³
+...
+
+Used to introduce nonlinear relationships.
+
+8. Binning and Binarization
+Binning
+
+Convert continuous values into ranges.
+
+Age
+ ↓
+Young / Adult / Senior
+
+Pandas:
+
+pd.cut()
+pd.qcut()
+Binarization
+
+Convert values into:
+
+0 / 1
+
+Example:
+
+age >= 18
+
+Scikit-learn:
+
+Binarizer
+9. Encoding
+
+Converting categorical variables into numerical representations.
+
+Important terms:
+
+One-Hot Encoding
+Label Encoding
+Ordinal Encoding
+Categorical features
+Numerical features
+OneHotEncoder
+OrdinalEncoder
+10. ColumnTransformer
+
+Used when different columns need different preprocessing.
+
+For example:
+
+Numerical columns
+       ↓
+StandardScaler
+
+
+Categorical columns
+       ↓
+OneHotEncoder
+
+Combined using:
+
+ColumnTransformer
+
+This is extremely important for real ML projects.
+
+11. fit() vs transform()
+fit()
+
+Learns parameters from data.
+
+For example, StandardScaler learns:
+
+mean
+standard deviation
+transform()
+
+Uses those learned parameters to transform data.
+
+fit_transform()
+
+Equivalent conceptually to:
+
+fit()
+transform()
+
+on the same training data.
+
+Important rule:
+
+X_train → fit_transform()
+X_test  → transform()
+
+Don't fit your scaler on the test set.
+
+12. Machine Learning Fundamentals
+
+Important concepts:
+
+Machine Learning
+Supervised learning
+Unsupervised learning
+Features
+Target
+Labels
+Training data
+Test data
+Validation data
+Model
+Prediction
+Training
+Inference
+Overfitting
+Underfitting
+Generalization
+Bias
+Variance
+13. Regression
+
+Regression predicts a continuous numerical value.
+
+Examples:
+
+Revenue
+Price
+Temperature
+Salary
+
+Models discussed:
+
+Linear Regression
+y=mx+b
+
+Terms:
+
+Slope
+Y-intercept
+Coefficient
+Gradient descent
+Loss function
+Mean Squared Error
+Polynomial Regression
+
+Adds polynomial terms:
+Ridge Regression
+
+Linear regression + L2 regularization.
+
+Lasso Regression
+
+Linear regression + L1 regularization.
+
+Decision Tree Regression
+Random Forest Regression
+Gradient Boosting
+14. Gradient Descent
+
+Important concepts:
+
+Cost/loss function
+Gradient
+Learning rate
+Iterations
+Weights
+Bias/intercept
+Slope
+Y-intercept
+
+Basic idea:
+
+Calculate error
+     ↓
+Calculate gradient
+     ↓
+Update parameters
+     ↓
+Repeat
+
+For linear regression:
+
+y=wx+b
+
+where:
+
+w = slope/weight
+b = y-intercept/bias
+15. Classification
+
+Classification predicts categories/classes.
+
+Examples:
+
+Spam / Not Spam
+Yes / No
+Fraud / Not Fraud
+Cat / Dog
+
+Models discussed:
+
+Logistic Regression
+KNN
+SVM
+Decision Tree
+Random Forest
+Gradient Boosting
+16. KNN
+
+K-Nearest Neighbors
+
+Important concepts:
+
+Distance
+Neighbors
+K value
+Euclidean distance
+Classification
+Regression
+Feature scaling
+
+KNN can perform both:
+
+KNeighborsClassifier
+KNeighborsRegressor
+17. SVM
+
+Support Vector Machine
+
+Important concepts:
+
+Hyperplane
+Decision boundary
+Support vectors
+Margin
+Kernel
+Linear kernel
+RBF kernel
+Classification
+Regression
+
+SVM can perform:
+
+Classification → SVC
+Regression → SVR
+18. Why Some Models Work for Both Regression and Classification
+
+Models such as:
+
+Decision Trees
+Random Forest
+KNN
+SVM
+Gradient Boosting
+
+can have both regression and classification versions.
+
+The underlying algorithm is similar, but the objective and output differ.
+
+Example:
+
+Decision Tree
+     │
+     ├── Classifier → class
+     │
+     └── Regressor → numerical value
+19. Regularization
+Ridge
+
+L2 regularization:
+
+Loss+λ∑w
+i
+2
+	​
+
+Lasso
+
+L1 regularization:
+
+Loss+λ∑∣w
+i
+	​
+
+∣
+
+Important concepts:
+
+Regularization
+Lambda / alpha
+L1
+L2
+Overfitting
+Feature selection
+Shrinking coefficients
+20. Nonlinear Models
+
+Discussed:
+
+Polynomial Regression
+Decision Trees
+Random Forest
+Gradient Boosting
+SVM with nonlinear kernels
+KNN
+Neural Networks
+
+Key concept:
+
+A nonlinear model can learn relationships that cannot be represented well by a simple straight line.
+
+21. How to Choose a Model
+
+Important considerations:
+
+Regression vs classification
+Linear vs nonlinear relationship
+Dataset size
+Number of features
+Feature types
+Outliers
+Missing values
+Interpretability
+Training speed
+Prediction speed
+Overfitting
+Underfitting
+Accuracy/performance
+Cross-validation
+22. Outlier Detection
+
+Methods discussed:
+
+IQR
+IQR=Q
+3
+	​
+
+−Q
+1
+	​
+
+
+Bounds:
+
+Q
+1
+	​
+
+−1.5IQR
+Q
+3
+	​
+
++1.5IQR
+Z-score
+z=
+σ
+x−μ
+	​
+
+
+Common threshold:
+
+|z| > 3
+Other methods
+Isolation Forest
+Local Outlier Factor
+Mahalanobis distance
+23. Outlier Handling
+
+You don't always remove an outlier.
+
+Possible strategies:
+
+Outlier
+   ↓
+Investigate
+   ├── Correct
+   ├── Remove
+   ├── Cap
+   ├── Transform
+   └── Keep
+
+Methods:
+
+Removal
+Capping
+Winsorization
+Log transformation
+Robust scaling
+24. Curse of Dimensionality
+
+Important concepts:
+
+High dimensionality
+Data sparsity
+Distance degradation
+Computational complexity
+Overfitting
+Irrelevant features
+Redundant features
+
+As dimensions increase:
+
+1D → manageable
+2D → manageable
+10D → harder
+100D → much harder
+1000D → potentially problematic
+25. PCA
+
+Principal Component Analysis
+
+A dimensionality reduction technique.
+
+Important concepts:
+
+Principal components
+PC1
+PC2
+Variance
+Explained variance
+Explained variance ratio
+Cumulative explained variance
+Dimensionality reduction
+Eigenvectors
+Eigenvalues
+Linear combinations
+Orthogonality
+
+Example:
+
+100 features
+     ↓
+PCA
+     ↓
+20 components
+
+Important:
+
+PCA(n_components=0.95)
+
+means approximately:
+
+Keep enough components to explain 95% of the variance.
+
+26. Feature Selection vs PCA
+Feature Selection
+100 features
+ ↓
+select
+ ↓
+20 original features
+PCA
+100 features
+ ↓
+PCA
+ ↓
+20 NEW components
+27. Classification vs Clustering
+Classification
+
+Supervised learning
+
+X + y
+ ↓
+Model
+ ↓
+Class
+
+Examples:
+
+Spam / Not Spam
+Fraud / Not Fraud
+Clustering
+
+Unsupervised learning
+
+X only
+ ↓
+Algorithm
+ ↓
+Groups
+
+Examples:
+
+Customer Segment 1
+Customer Segment 2
+Customer Segment 3
+28. Clustering Algorithms
+
+Discussed:
+
+K-Means
+Centroids
+K value
+Distance
+Cluster assignment
+DBSCAN
+Density
+eps
+min_samples
+Noise/outliers
+Irregular cluster shapes
+Hierarchical Clustering
+Hierarchy
+Dendrogram
+Agglomerative clustering
+Clustering evaluation
+Silhouette score
+Davies-Bouldin index
+29. Scikit-Learn
+
+You asked about Scikit-learn, and it ties almost everything above together.
+
+Important modules/classes:
+
+sklearn.linear_model
+sklearn.tree
+sklearn.ensemble
+sklearn.neighbors
+sklearn.svm
+sklearn.preprocessing
+sklearn.compose
+sklearn.pipeline
+sklearn.decomposition
+sklearn.cluster
+sklearn.metrics
+30. Pipelines
+
+A Pipeline combines preprocessing and modeling.
+
+Example:
+
+Pipeline([
+    ("scaler", StandardScaler()),
+    ("pca", PCA(n_components=0.95)),
+    ("model", LogisticRegression())
+])
+
+Concept:
+
+Raw data
+   ↓
+Scaling
+   ↓
+PCA
+   ↓
+Model
+
+This helps prevent data leakage and makes preprocessing reproducible.
+
+31. Data Leakage
+
+A critical ML concept.
+
+Bad:
+
+Entire dataset
+      ↓
+fit scaler
+      ↓
+train/test split
+
+Better:
+
+Data
+ ↓
+Train/Test Split
+ ↓
+Train → fit preprocessing
+Test  → transform only
+
+Pipeline helps enforce this correctly.
+
+32. Statistics Concepts We Covered
+
+Important statistical terms:
+
+Mean
+Median
+Mode
+Variance
+Standard deviation
+Percentile
+Quartile
+IQR
+Z-score
+Correlation
+Covariance
+Distribution
+Skewness
+Normal distribution
+33. AI / AI Engineering Topics You Mentioned
+
+You also moved beyond traditional ML into AI engineering.
+
+Important terms you mentioned:
+
+TensorFlow
+LangChain
+LLMs
+Vector databases
+Fine-tuning
+AGI
+AI systems engineering
+JavaScript packages
+
+These belong to a broader AI/ML ecosystem rather than all being part of classical ML.
+
+A rough hierarchy is:
+
+Artificial Intelligence
+│
+├── Machine Learning
+│   ├── Supervised Learning
+│   ├── Unsupervised Learning
+│   └── Reinforcement Learning
+│
+├── Deep Learning
+│   ├── Neural Networks
+│   ├── TensorFlow
+│   └── PyTorch
+│
+└── Generative AI / AI Engineering
+    ├── LLMs
+    ├── LangChain
+    ├── Embeddings
+    ├── Vector Databases
+    ├── RAG
+    ├── Fine-tuning
+    └── AI Agents
+🔥 Your Overall Learning Map
+
+If I organize everything you've asked about into the order I'd recommend learning it:
+
+Python
+Matplotlib / Seaborn
+  ↓
+Statistics
+  ↓
+Feature Engineering
+  ├── Encoding
+  ├── Binning
+  ├── Binarization
+  ├── Transformation
+  └── Polynomial Features
+  ↓
+Feature Scaling
+  ├── Standardization
+  ├── Normalization
+  └── Robust Scaling
+  ↓
+ColumnTransformer
+  ↓
+Pipeline
+  ↓
+Train / Validation / Test
+  ↓
+Supervised Learning
+  ├── Regression
+  │   ├── Linear
+  │   ├── Polynomial
+  │   ├── Ridge
+  │   ├── Lasso
+  │   ├── Decision Tree
+  │   ├── Random Forest
+  │   └── Gradient Boosting
+  │
+  └── Classification
+      ├── Logistic Regression
+      ├── KNN
+      ├── SVM
+      ├── Decision Tree
+      ├── Random Forest
+      └── Gradient Boosting
+  ↓
+Unsupervised Learning
+  ├── K-Means
+  ├── DBSCAN
+  └── Hierarchical Clustering
+  ↓
+Dimensionality Reduction
+  └── PCA
+  ↓
+Outlier Detection
+  ├── IQR
+  ├── Z-score
+  ├── Isolation Forest
+  └── LOF
+  ↓
+Model Evaluation
+  ├── Regression Metrics
+  └── Classification Metrics
+  ↓
+Deep Learning
+  ├── Neural Networks
+  ├── TensorFlow
+  └── PyTorch
+  ↓
+AI Engineering
+  ├── LLMs
+  ├── Embeddings
+  ├── Vector DBs
+  ├── RAG
+  ├── LangChain
+  ├── Fine-tuning
+  └── Agents
+The most important concepts to master first
+
+If your goal is to become strong in ML, prioritize these:
+
+1. Pandas + NumPy
+2. EDA + Statistics
+3. Data Cleaning
+4. Feature Engineering
+5. Encoding + Scaling + Transformation
+6. Train/Test Split + Data Leakage
+7. Linear/Logistic Regression
+8. Trees + Random Forest + Gradient Boosting
+9. KNN + SVM
+10. Model Evaluation + Cross-validation
+11. Clustering
+12. PCA + Dimensionality Reduction
+13. Hyperparameter Tuning
+14. End-to-end ML Pipelines
+15. Deep Learning → LLMs → RAG → AI Engineering
+
+That gives you a much more complete picture than memorizing individual algorithms: data → preprocessing → features → model → evaluation → deployment/AI system.
